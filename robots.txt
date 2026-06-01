@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /cart.html
+Disallow: /confirmation.html
+Disallow: /404.html
+Disallow: /ministore.html
+Disallow: /scripts/
+Disallow: /*.json$
+Disallow: /*.csv$
+Disallow: /*.py$
+
+Sitemap: https://novastyle.ma/sitemap.xml

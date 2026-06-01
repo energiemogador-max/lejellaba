@@ -1,0 +1,80 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "reviews": {
+      ".read": true,
+      ".write": "auth != null",
+      "$productId": {
+        ".read": true,
+        ".write": "auth != null",
+        "$reviewId": {
+          ".read": true,
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['name','rating','text','date']) && newData.child('rating').isNumber() && newData.child('rating').val() >= 1 && newData.child('rating').val() <= 5 && newData.child('name').isString() && newData.child('name').val().length <= 60 && newData.child('text').isString() && newData.child('text').val().length >= 10 && newData.child('text').val().length <= 1000"
+        }
+      }
+    },
+    "pending_reviews": {
+      ".read": "auth != null",
+      ".write": true,
+      "$productId": {
+        "$reviewId": {
+          ".validate": "newData.hasChildren(['name','rating','text','date','approved']) && newData.child('rating').isNumber() && newData.child('rating').val() >= 1 && newData.child('rating').val() <= 5 && newData.child('name').isString() && newData.child('name').val().length <= 60 && newData.child('text').isString() && newData.child('text').val().length >= 10 && newData.child('text').val().length <= 1000 && newData.child('date').isString() && newData.child('date').val().length <= 40 && (!newData.child('city').exists() || (newData.child('city').isString() && newData.child('city').val().length <= 40)) && newData.child('approved').isBoolean() && newData.child('approved').val() === false"
+        }
+      }
+    },
+    "review_summaries": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "online_visitors": {
+      ".read": "auth != null",
+      "$visitorId": {
+        ".write": true,
+        ".validate": "!newData.exists() || (newData.hasChildren(['visitorId','sessionId','page','pageLabel','device','browser','referrer','cartCount','arrivalAt','lastSeen','duration','screenW']) && newData.child('visitorId').isString() && newData.child('visitorId').val().length <= 32 && newData.child('sessionId').isString() && newData.child('sessionId').val().length <= 40 && newData.child('page').isString() && newData.child('page').val().length <= 300 && newData.child('pageLabel').isString() && newData.child('pageLabel').val().length <= 80 && newData.child('device').isString() && newData.child('device').val().length <= 20 && newData.child('browser').isString() && newData.child('browser').val().length <= 20 && newData.child('referrer').isString() && newData.child('referrer').val().length <= 120 && newData.child('cartCount').isNumber() && newData.child('cartCount').val() >= 0 && newData.child('cartCount').val() <= 99 && newData.child('arrivalAt').isNumber() && newData.child('lastSeen').isNumber() && newData.child('duration').isNumber() && newData.child('duration').val() >= 0 && newData.child('screenW').isNumber() && newData.child('screenW').val() >= 0 && (!newData.child('ip').exists() || (newData.child('ip').isString() && newData.child('ip').val().length <= 45)) && (!newData.child('city').exists() || (newData.child('city').isString() && newData.child('city').val().length <= 80)) && (!newData.child('country').exists() || (newData.child('country').isString() && newData.child('country').val().length <= 80)) && (!newData.child('country_code').exists() || (newData.child('country_code').isString() && newData.child('country_code').val().length <= 8)))"
+      }
+    },
+    "catalog": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "products": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "orders": {
+      ".read": "auth != null",
+      "$orderId": {
+        ".write": "auth != null || !data.exists()",
+        ".validate": "newData.hasChildren(['customer','items','total','status','timestamp']) && newData.child('customer').hasChildren(['name','phone','city','address']) && newData.child('customer/name').isString() && newData.child('customer/name').val().length >= 1 && newData.child('customer/name').val().length <= 120 && newData.child('customer/phone').isString() && newData.child('customer/phone').val().length >= 8 && newData.child('customer/phone').val().length <= 40 && newData.child('customer/city').isString() && newData.child('customer/city').val().length >= 1 && newData.child('customer/city').val().length <= 80 && newData.child('customer/address').isString() && newData.child('customer/address').val().length >= 1 && newData.child('customer/address').val().length <= 500 && (!newData.child('customer/email').exists() || (newData.child('customer/email').isString() && newData.child('customer/email').val().length <= 120)) && (!newData.child('customer/notes').exists() || (newData.child('customer/notes').isString() && newData.child('customer/notes').val().length <= 300)) && newData.child('items').hasChildren() && newData.child('total').isNumber() && newData.child('total').val() >= 0 && newData.child('total').val() <= 1000000 && newData.child('status').isString() && newData.child('status').val().length <= 40 && newData.child('timestamp').isNumber()"
+      }
+    },
+    "drafts": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "sessions": {
+      ".read": "auth != null",
+      "$date": {
+        "$sessionId": {
+          ".write": true,
+          ".validate": "newData.hasChildren(['visitorId','referrer','device','browser','page','pageLabel','startedAt']) && newData.child('visitorId').isString() && newData.child('visitorId').val().length <= 32 && newData.child('referrer').isString() && newData.child('referrer').val().length <= 120 && newData.child('device').isString() && newData.child('device').val().length <= 20 && newData.child('browser').isString() && newData.child('browser').val().length <= 20 && newData.child('page').isString() && newData.child('page').val().length <= 300 && newData.child('pageLabel').isString() && newData.child('pageLabel').val().length <= 80 && newData.child('startedAt').isNumber() && (!newData.child('duration').exists() || (newData.child('duration').isNumber() && newData.child('duration').val() >= 0)) && (!newData.child('endedAt').exists() || newData.child('endedAt').isNumber()) && (!newData.child('city').exists() || (newData.child('city').isString() && newData.child('city').val().length <= 80)) && (!newData.child('country').exists() || (newData.child('country').isString() && newData.child('country').val().length <= 80)) && (!newData.child('country_code').exists() || (newData.child('country_code').isString() && newData.child('country_code').val().length <= 8)) && (!newData.child('ip').exists() || (newData.child('ip').isString() && newData.child('ip').val().length <= 45))"
+        }
+      }
+    },
+    "wa_clicks": {
+      ".read": "auth != null",
+      "$date": {
+        "$clickId": {
+          ".write": true,
+          ".validate": "newData.hasChildren(['visitorId','sessionId','page','pageLabel','timestamp'])"
+        }
+      }
+    },
+    "settings": {
+      ".read": true,
+      ".write": "auth != null"
+    }
+  }
+}

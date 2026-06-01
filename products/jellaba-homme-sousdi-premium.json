@@ -1,0 +1,40 @@
+{
+  "slug": "jellaba-homme-sousdi-premium",
+  "name": "Jellaba Homme Sousdi Premium",
+  "categoryId": "jellaba-homme",
+  "category": "Jellaba Homme",
+  "active": true,
+  "images": [
+    "/images/jellaba-homme-sousdi-premium/1.webp",
+    "/images/jellaba-homme-sousdi-premium/2.webp"
+  ],
+  "description": "L'excellence de la tradition : Jellaba homme en tissu Sousdi tissé main, léger et aéré. Finitions de haute couture traditionnelle. Portée par les connaisseurs pour une élégance intemporelle.",
+  "seo": {
+    "title": "Jellaba Homme Sousdi Premium | Le Jellaba",
+    "description": "L'excellence de la tradition : Jellaba homme en tissu Sousdi tissé main, léger et aéré."
+  },
+  "axes": {
+    "order": ["Taille", "Couleur"],
+    "options": {
+      "Taille": ["S", "M", "L", "XL", "2XL"],
+      "Couleur": ["Blanc cassé", "Beige", "Bleu nuit"]
+    }
+  },
+  "variants": [
+    { "axes": { "Taille": "S", "Couleur": "Blanc cassé" }, "price": 1500, "sku": "JH-SP-S-BC" },
+    { "axes": { "Taille": "M", "Couleur": "Blanc cassé" }, "price": 1500, "sku": "JH-SP-M-BC" },
+    { "axes": { "Taille": "L", "Couleur": "Blanc cassé" }, "price": 1500, "sku": "JH-SP-L-BC" },
+    { "axes": { "Taille": "XL", "Couleur": "Blanc cassé" }, "price": 1500, "sku": "JH-SP-XL-BC" },
+    { "axes": { "Taille": "2XL", "Couleur": "Blanc cassé" }, "price": 1500, "sku": "JH-SP-2XL-BC" },
+    { "axes": { "Taille": "S", "Couleur": "Beige" }, "price": 1500, "sku": "JH-SP-S-BE" },
+    { "axes": { "Taille": "M", "Couleur": "Beige" }, "price": 1500, "sku": "JH-SP-M-BE" },
+    { "axes": { "Taille": "L", "Couleur": "Beige" }, "price": 1500, "sku": "JH-SP-L-BE" },
+    { "axes": { "Taille": "XL", "Couleur": "Beige" }, "price": 1500, "sku": "JH-SP-XL-BE" },
+    { "axes": { "Taille": "2XL", "Couleur": "Beige" }, "price": 1500, "sku": "JH-SP-2XL-BE" },
+    { "axes": { "Taille": "S", "Couleur": "Bleu nuit" }, "price": 1500, "sku": "JH-SP-S-BL" },
+    { "axes": { "Taille": "M", "Couleur": "Bleu nuit" }, "price": 1500, "sku": "JH-SP-M-BL" },
+    { "axes": { "Taille": "L", "Couleur": "Bleu nuit" }, "price": 1500, "sku": "JH-SP-L-BL" },
+    { "axes": { "Taille": "XL", "Couleur": "Bleu nuit" }, "price": 1500, "sku": "JH-SP-XL-BL" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bleu nuit" }, "price": 1500, "sku": "JH-SP-2XL-BL" }
+  ]
+}

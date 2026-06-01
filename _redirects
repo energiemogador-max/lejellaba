@@ -1,0 +1,167 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Nova Style — Netlify _redirects
+# Preserves all SEO equity from the old Shopify store (novastyle.ma)
+# Rule order matters: specific rules MUST appear before wildcards.
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 1. COLLECTIONS → CATEGORY PAGES
+#    Specific high-traffic collections first, wildcard fallback last.
+# ══════════════════════════════════════════════════════════════════════════════
+
+# 745 clicks — most valuable redirect on the site
+/collections/miroir-de-salle-de-bain-retroeclaire-led   /categorie/sdb-premium/     301
+/collections/miroir-de-salle-de-bain-retroeclaire-led/  /categorie/sdb-premium/     301
+
+# Named collection slugs → categories
+/collections/consoles-et-miroirs-d-entree               /categorie/consoles/         301
+/collections/douche-italienne-sur-mesure                 /categorie/douches/          301
+/collections/table-de-sejour                             /categorie/tables/           301
+/collections/miroir-salle-de-bain-maroc                  /categorie/sdb-premium/     301
+/collections/miroirs-sdb                                 /categorie/sdb-premium/     301
+/collections/miroir-sdb-premium                          /categorie/sdb-premium/     301
+/collections/sdb-premium                                 /categorie/sdb-premium/     301
+/collections/entree-de-gamme                             /categorie/sdb-essentiel/   301
+/collections/salon                                       /categorie/salon/            301
+/collections/dressing                                    /categorie/salon/            301
+/collections/consoles                                    /categorie/consoles/         301
+/collections/tables                                      /categorie/tables/           301
+/collections/douches                                     /categorie/douches/          301
+
+# Homepage aliases
+/collections/frontpage                                   /                            301
+/collections/all                                         /categorie/sdb-premium/      301
+
+# Shopify hub pages with impressions
+/collections/miroir-avec-led                             /categorie/sdb-premium/     301
+/collections/miroir-anti-buee                            /categorie/sdb-premium/     301
+
+# Wildcard fallback — catches any other /collections/* URL
+/collections/*                                           /categorie/sdb-premium/     301
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 2. PRODUCTS → PRODUITS  (exact slug matches — Netlify ignores query strings)
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Alias slugs (old Shopify slug ≠ new site slug) ───────────────────────────
+/products/nova-style-miroir-anfa                         /produits/miroir-maroc-nova-style-miroir-anfa/                    301
+/products/nova-style-miroir-celia                        /produits/miroir-marrakech-nova-style-miroir-celia/               301
+/products/nova-style-miroir-horizon                      /produits/miroire-nova-style-miroir-horizon/                      301
+/products/nova-style-miroir-eclipse                      /produits/magasin-miroir-casablanca-nova-style-miroir-eclipse/    301
+/products/nova-style-miroir-anfa-half                    /produits/nova-style-miroir-anfa-half-plus/                       301
+/products/nova-style-miroir-pentagone                    /produits/nova-style-miroir-pentagone-2/                          301
+/products/nova-style-miroir-rital                        /produits/nova-style-miroir-de-salon-et-dressing-rital-grand-miroir-de-sol-sculptural-en-tissu-boucle/              301
+/products/nova-style-miroir-elios                        /categorie/sdb-premium/                                           301
+/products/nova-style-miroir-pear-ii-cm                   /produits/miroir-salle-de-bain-nova-style-miroir-pear-ii-cm/      301
+/products/Miroir-salle-de-bain-nova-style-miroir-pear-ii-cm  /produits/miroir-salle-de-bain-nova-style-miroir-pear-ii-cm/ 301
+/products/Deco-miroir-mural-nova-style-miroir-rital      /produits/nova-style-miroir-de-salon-et-dressing-rital-grand-miroir-de-sol-sculptural-en-tissu-boucle/              301
+/produits/deco-miroir-mural-nova-style-miroir-rital/      /produits/nova-style-miroir-de-salon-et-dressing-rital-grand-miroir-de-sol-sculptural-en-tissu-boucle/              301
+/products/miroir-rotin-led-oval-cadre-rotin-naturel      /produits/nova-style-miroir-rotin-irregulier-bois-nova-style/     301
+/products/miroir-de-salon-et-dressing-nova-style-miroir-bloom  /produits/nova-style-miroir-bloom/                         301
+/products/personnalisez-votre-douche-a-l-italienne-en-forme-droite  /produits/douche-italienne-en-forme-droite/            301
+/products/miroir-de-salle-de-bain-salon-et-entree-galet-antibuee-anticorrosion  /produits/miroir-gale-salle-de-bain-led-antibuee-anticorrosion/  301
+/products/miroir-de-salle-de-bain-ovale-anti-buee-et-anticorrosion  /produits/miroir-gale-salle-de-bain-led-antibuee-anticorrosion/  301
+/products/nova-style-miroir-silhouette-de-salon-et-console  /categorie/salon/                                              301
+/products/nova-style-miroir-vitrail-de-salon-et-consol   /categorie/salon/                                                 301
+
+# ── JSON data API for product-loader.js ──────────────────────────────────────
+# product-loader.js fetches /api/products/<slug>.json to avoid the /products/* redirect below.
+/api/products/*                                          /products/:splat         200
+
+# ── JSON data files must NEVER be redirected — product-loader.js fetches these ─
+# A 200 pass-through here short-circuits the 301 wildcard below for all API calls.
+/products/*.json                                         /products/:splat.json       200
+
+# ── Wildcard fallback for all other products (1:1 translation) ────────────────
+/products/*                                              /produits/:splat            301
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 3. SHOPIFY AMP PAGES  (/a/p/products/*)
+# ══════════════════════════════════════════════════════════════════════════════
+
+/a/p/products/*                                          /produits/:splat/           301
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 4. SHOPIFY PAGES  (/pages/*)
+#    The two high-traffic pages already exist as real HTML — no redirect needed.
+#    Catch remaining Shopify /pages/* URLs.
+# ══════════════════════════════════════════════════════════════════════════════
+
+/pages/html-sitemap                                      /blog/miroir-led-maroc-guide-achat/  301
+/pages/html-sitemap-products                             /blog/miroir-led-maroc-guide-achat/  301
+/pages/html-sitemap-collections                          /blog/miroir-led-maroc-guide-achat/  301
+/pages/html-sitemap-articles                             /blog/miroir-led-maroc-guide-achat/  301
+/pages/html-sitemap-blogs                                /blog/miroir-led-maroc-guide-achat/  301
+/pages/html-sitemap-pages                                /blog/miroir-led-maroc-guide-achat/  301
+/pages/partner-links                                     /blog/miroir-led-maroc-guide-achat/  301
+/pages/preferred-partners                                /blog/miroir-led-maroc-guide-achat/  301
+/pages/acheter-un-miroir-a-led-retroeclaire-et-anti-buee-decoratif-et-sur-mesure-au-maroc /blog/miroir-led-maroc-guide-achat/  301
+/pages/acheter-un-miroir-a-led-pour-salle-de-bain        /blog/miroir-led-maroc-guide-achat/  301
+/pages/acheter-un-miroir-a-led-pour-salle-de-bain/*      /blog/miroir-led-maroc-guide-achat/  301
+/pages/*                                                 /blog/miroir-led-maroc-guide-achat/  301
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 4.5 SHOPIFY BLOGS  (/blogs/*)
+# ══════════════════════════════════════════════════════════════════════════════
+/blogs/news/acheter-un-miroir-a-led-retroeclaire-et-anti-buee-au-maroc-le-guide-ultime-pour-choisir-le-miroir-parfait /blog/miroir-led-maroc-guide-achat/ 301
+/blogs/*                                                 /blog/miroir-led-maroc-guide-achat/  301
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 5. LOCAL KEYWORD HUB PAGES (city + theme landing pages)
+#    These appear in GSC — redirect to the closest real page.
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 6. OLD ROOT-LEVEL PRODUCT SLUGS → /produits/ (canonical consolidation)
+#    These pages exist with index.html + canonical but Google crawls both.
+#    301s ensure link equity flows to the /produits/ canonical.
+# ══════════════════════════════════════════════════════════════════════════════
+
+/nova-style-ensemble-console-et-miroir/                   /produits/nova-style-ensemble-console-et-miroir/                             301
+/nova-style-miroir-archway/                               /produits/nova-style-miroir-archway/                                         301
+/nova-style-miroir-asymetrique/                           /produits/nova-style-miroir-asymetrique/                                     301
+/nova-style-miroir-anfa-half-plus/                        /produits/nova-style-miroir-anfa-half-plus/                                  301
+/nova-style-miroir-bloom/                                 /produits/nova-style-miroir-bloom/                                           301
+/nova-style-miroir-cloud/                                 /produits/nova-style-miroir-cloud/                                           301
+/nova-style-miroir-croissant-de-lune/                     /produits/nova-style-miroir-croissant-de-lune/                               301
+/nova-style-miroir-croissant-de-lune-ii/                  /produits/nova-style-miroir-croissant-de-lune-ii/                            301
+/nova-style-miroir-croissant-de-lune-ii-finition-noyer/   /produits/nova-style-miroir-croissant-de-lune-ii-finition-noyer/             301
+/nova-style-miroir-drizzle/                               /produits/nova-style-miroir-drizzle/                                         301
+/nova-style-miroir-dunes/                                 /produits/nova-style-miroir-dunes/                                           301
+/nova-style-miroir-eclipse-bright/                        /produits/nova-style-miroir-eclipse-bright/                                  301
+/nova-style-miroir-eclipse-cm/                            /produits/nova-style-miroir-eclipse-cm/                                      301
+/nova-style-miroir-elvis/                                 /produits/nova-style-miroir-elvis/                                           301
+/nova-style-miroir-elvis-woody/                           /produits/nova-style-miroir-elvis-woody/                                     301
+/nova-style-miroir-emeraude/                              /produits/nova-style-miroir-emeraude/                                        301
+/nova-style-miroir-halo/                                  /produits/nova-style-miroir-halo/                                            301
+/nova-style-miroir-hawaii-sdb/                            /produits/nova-style-miroir-hawaii-sdb/                                      301
+/nova-style-miroir-pebble/                                /produits/nova-style-miroir-pebble/                                          301
+/nova-style-miroir-rond/                                  /produits/nova-style-miroir-rond/                                            301
+/nova-style-miroir-split/                                 /produits/nova-style-miroir-split/                                           301
+/nova-style-miroir-sunrise/                               /produits/nova-style-miroir-sunrise/                                         301
+/nova-style-miroir-upside-down/                           /produits/nova-style-miroir-upside-down/                                     301
+/nova-style-miroir-victoria/                              /produits/nova-style-miroir-victoria/                                        301
+/nova-style-miroir-vortex/                                /produits/nova-style-miroir-vortex/                                          301
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 7. MALFORMED / TYPO URLS → correct destination
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Nested malformed URL (product slug inside wrong path)
+/produits/nova-style-ensemble-console-et-miroir/nova-style-deux-miroirs-anfa-medina/miroir-salle-de-bain-nova-style-miroir-pear-ii-cm/   /produits/miroir-salle-de-bain-nova-style-miroir-pear-ii-cm/   301
+
+# Nested old root paths
+/nova-style-ensemble-console-et-miroir/nova-style-deux-miroirs-anfa-medina/                                                              /produits/nova-style-deux-miroirs-anfa-medina/                  301
+
+# Typo in product slug ("oducts" instead of nothing)
+/produits/nova-style-oducts-miroir-de-salle-de-bain-anti-buee-et-anticorrosion-miroir-noura/   /produits/nova-style-miroir-de-salle-de-bain-anti-buee-et-anticorrosion-miroir-noura/   301
+
+# Old Rital salon page URL variant
+/produits/nova-style-miroir-de-salon-et-dressing-rital-nova-style/   /produits/nova-style-miroir-de-salon-et-dressing-rital-grand-miroir-de-sol-sculptural-en-tissu-boucle/   301

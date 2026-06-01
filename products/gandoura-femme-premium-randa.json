@@ -1,0 +1,45 @@
+{
+  "slug": "gandoura-femme-premium-randa",
+  "name": "Gandoura Femme Randa Élégante",
+  "categoryId": "gandoura-femme",
+  "category": "Gandoura Femme",
+  "active": true,
+  "images": [
+    "/images/gandoura-femme-premium-randa/1.webp",
+    "/images/gandoura-femme-premium-randa/2.webp"
+  ],
+  "description": "Gandoura d'été pour femme avec coutures en Randa raffinées. Tissu fluide, léger et extrêmement agréable à porter pour recevoir ou pour les soirées de Ramadan.",
+  "seo": {
+    "title": "Gandoura Femme Randa Élégante | Le Jellaba",
+    "description": "Gandoura d'été pour femme avec coutures en Randa raffinées. Tissu fluide, léger."
+  },
+  "axes": {
+    "order": ["Taille", "Couleur"],
+    "options": {
+      "Taille": ["S", "M", "L", "XL", "2XL"],
+      "Couleur": ["Bordeaux", "Rose poudré", "Vert bouteille", "Bleu nuit"]
+    }
+  },
+  "variants": [
+    { "axes": { "Taille": "S", "Couleur": "Bordeaux" }, "price": 650, "sku": "GF-PR-S-BO" },
+    { "axes": { "Taille": "M", "Couleur": "Bordeaux" }, "price": 650, "sku": "GF-PR-M-BO" },
+    { "axes": { "Taille": "L", "Couleur": "Bordeaux" }, "price": 650, "sku": "GF-PR-L-BO" },
+    { "axes": { "Taille": "XL", "Couleur": "Bordeaux" }, "price": 650, "sku": "GF-PR-XL-BO" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bordeaux" }, "price": 650, "sku": "GF-PR-2XL-BO" },
+    { "axes": { "Taille": "S", "Couleur": "Rose poudré" }, "price": 650, "sku": "GF-PR-S-RO" },
+    { "axes": { "Taille": "M", "Couleur": "Rose poudré" }, "price": 650, "sku": "GF-PR-M-RO" },
+    { "axes": { "Taille": "L", "Couleur": "Rose poudré" }, "price": 650, "sku": "GF-PR-L-RO" },
+    { "axes": { "Taille": "XL", "Couleur": "Rose poudré" }, "price": 650, "sku": "GF-PR-XL-RO" },
+    { "axes": { "Taille": "2XL", "Couleur": "Rose poudré" }, "price": 650, "sku": "GF-PR-2XL-RO" },
+    { "axes": { "Taille": "S", "Couleur": "Vert bouteille" }, "price": 650, "sku": "GF-PR-S-VE" },
+    { "axes": { "Taille": "M", "Couleur": "Vert bouteille" }, "price": 650, "sku": "GF-PR-M-VE" },
+    { "axes": { "Taille": "L", "Couleur": "Vert bouteille" }, "price": 650, "sku": "GF-PR-L-VE" },
+    { "axes": { "Taille": "XL", "Couleur": "Vert bouteille" }, "price": 650, "sku": "GF-PR-XL-VE" },
+    { "axes": { "Taille": "2XL", "Couleur": "Vert bouteille" }, "price": 650, "sku": "GF-PR-2XL-VE" },
+    { "axes": { "Taille": "S", "Couleur": "Bleu nuit" }, "price": 650, "sku": "GF-PR-S-BL" },
+    { "axes": { "Taille": "M", "Couleur": "Bleu nuit" }, "price": 650, "sku": "GF-PR-M-BL" },
+    { "axes": { "Taille": "L", "Couleur": "Bleu nuit" }, "price": 650, "sku": "GF-PR-L-BL" },
+    { "axes": { "Taille": "XL", "Couleur": "Bleu nuit" }, "price": 650, "sku": "GF-PR-XL-BL" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bleu nuit" }, "price": 650, "sku": "GF-PR-2XL-BL" }
+  ]
+}

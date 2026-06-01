@@ -1,0 +1,40 @@
+{
+  "slug": "gandoura-homme-mousseline",
+  "name": "Gandoura Homme Mousseline Haute Qualité",
+  "categoryId": "gandoura-homme",
+  "category": "Gandoura Homme",
+  "active": true,
+  "images": [
+    "/images/gandoura-homme-mousseline/1.webp",
+    "/images/gandoura-homme-mousseline/2.webp"
+  ],
+  "description": "Gandoura pour homme en mousseline légère haut de gamme. Coupe ample et confortable avec fine broderie marocaine au col. Idéale pour les prières de l'Aïd et du vendredi.",
+  "seo": {
+    "title": "Gandoura Homme Mousseline Haute Qualité | Le Jellaba",
+    "description": "Gandoura pour homme en mousseline légère haut de gamme."
+  },
+  "axes": {
+    "order": ["Taille", "Couleur"],
+    "options": {
+      "Taille": ["S", "M", "L", "XL", "2XL"],
+      "Couleur": ["Blanc", "Beige", "Bleu nuit"]
+    }
+  },
+  "variants": [
+    { "axes": { "Taille": "S", "Couleur": "Blanc" }, "price": 550, "sku": "GH-MO-S-WH" },
+    { "axes": { "Taille": "M", "Couleur": "Blanc" }, "price": 550, "sku": "GH-MO-M-WH" },
+    { "axes": { "Taille": "L", "Couleur": "Blanc" }, "price": 550, "sku": "GH-MO-L-WH" },
+    { "axes": { "Taille": "XL", "Couleur": "Blanc" }, "price": 550, "sku": "GH-MO-XL-WH" },
+    { "axes": { "Taille": "2XL", "Couleur": "Blanc" }, "price": 550, "sku": "GH-MO-2XL-WH" },
+    { "axes": { "Taille": "S", "Couleur": "Beige" }, "price": 550, "sku": "GH-MO-S-BE" },
+    { "axes": { "Taille": "M", "Couleur": "Beige" }, "price": 550, "sku": "GH-MO-M-BE" },
+    { "axes": { "Taille": "L", "Couleur": "Beige" }, "price": 550, "sku": "GH-MO-L-BE" },
+    { "axes": { "Taille": "XL", "Couleur": "Beige" }, "price": 550, "sku": "GH-MO-XL-BE" },
+    { "axes": { "Taille": "2XL", "Couleur": "Beige" }, "price": 550, "sku": "GH-MO-2XL-BE" },
+    { "axes": { "Taille": "S", "Couleur": "Bleu nuit" }, "price": 550, "sku": "GH-MO-S-BL" },
+    { "axes": { "Taille": "M", "Couleur": "Bleu nuit" }, "price": 550, "sku": "GH-MO-M-BL" },
+    { "axes": { "Taille": "L", "Couleur": "Bleu nuit" }, "price": 550, "sku": "GH-MO-L-BL" },
+    { "axes": { "Taille": "XL", "Couleur": "Bleu nuit" }, "price": 550, "sku": "GH-MO-XL-BL" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bleu nuit" }, "price": 550, "sku": "GH-MO-2XL-BL" }
+  ]
+}

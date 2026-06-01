@@ -1,0 +1,30 @@
+{
+  "id": "douche-italienne-en-l-verre-trempe",
+  "slug": "douche-italienne-en-l-verre-trempe",
+  "name": "Douche italienne en L verre trempe",
+  "category": "Douches",
+  "categoryId": "douches",
+  "active": true,
+  "images": [
+    "/images/douche-italienne-en-l-verre-trempe/1.webp",
+    "/images/douche-italienne-en-l-verre-trempe/2.webp",
+    "/images/douche-italienne-en-l-verre-trempe/3.webp",
+    "/images/douche-italienne-en-l-verre-trempe/4.webp",
+    "/images/douche-italienne-en-l-verre-trempe/5.webp",
+    "/images/douche-italienne-en-l-verre-trempe/6.webp"
+  ],
+  "price": {
+    "min": null,
+    "max": null
+  },
+  "description": "La douche italienne en L Nova Style est une paroi d angle sur mesure en verre trempe 10mm, ideale pour proteger deux cotes d un espace douche tout en conservant un rendu moderne, lumineux et facile a entretenir.",
+  "seo": {
+    "title": "Douche italienne en L verre trempe | Nova Style Maroc",
+    "description": "Douche italienne en L sur mesure en verre trempe 10mm. Fabrication et installation a Casablanca. Livraison partout au Maroc. Nova Style."
+  },
+  "axes": {
+    "order": [],
+    "options": {}
+  },
+  "variants": []
+}
