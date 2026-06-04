@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mdamma Fassia | Le Jellaba</title>
+<meta name="description" content="Achetez Mdamma Fassia. Artisanat marocain de qualité. Prix : 150 MAD. Livraison au Maroc.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lejellaba.ma/produits/ceinture-mdamma-fassia/">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Mdamma Fassia">
+<meta property="og:url" content="https://lejellaba.ma/produits/ceinture-mdamma-fassia/">
+<meta property="og:image" content="https://lejellaba.ma/images/ceinture-mdamma-fassia/1.webp">
+<meta property="og:locale" content="fr_MA">
+<meta property="product:price:amount" content="150">
+<meta property="product:price:currency" content="MAD">
+<meta property="product:availability" content="in stock">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Mdamma Fassia",
+  "description": "Mdamma Fassia - vêtement traditionnel marocain de haute qualité",
+  "image": ["https://lejellaba.ma/images/ceinture-mdamma-fassia/1.webp"],
+  "brand": {"@type": "Brand", "name": "Le Jellaba"},
+  "sku": "ceinture-mdamma-fassia",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "MAD",
+    "price": "150",
+    "url": "https://lejellaba.ma/produits/ceinture-mdamma-fassia/",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "Le Jellaba"}
+  }
+}
+</script>
+</head>
+<body>
+<script src="/assets/header.js" defer></script>
+<div class="announce">Livraison gratuite partout au Maroc · Artisanat authentique</div>
+
+<nav class="breadcrumb" style="max-width:1100px;margin:12px auto;padding:0 20px;font-size:12px;color:#9ca3af">
+  <a href="/" style="color:#6b7280;text-decoration:none">Accueil</a> ›
+  <a href="/categorie/accessoires/" style="color:#6b7280;text-decoration:none">Accessoires</a> ›
+  <span style="color:#1a1a1a">Mdamma Fassia</span>
+</nav>
+
+<div class="p-hero">
+  <div class="p-gallery">
+    <img src="/images/ceinture-mdamma-fassia/1.webp" alt="Mdamma Fassia" loading="eager" width="600" height="600">
+  </div>
+  <div class="p-info">
+    <div class="p-badge">✅ En stock · Expédition 3–5 jours</div>
+    <h1 class="p-title">Mdamma Fassia</h1>
+    <p class="p-subtitle">Qualité supérieure · Fabrication Maroc</p>
+    <div class="p-price">150 MAD</div>
+    
+    <div class="p-options" style="margin-top: 20px;">
+        <label>Taille :</label>
+        <select id="size-select" style="padding: 8px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <label>Couleur :</label>
+        <select id="color-select" style="padding: 8px; width: 100%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="Bleu Nuit">Bleu Nuit</option>
+            <option value="Noir">Noir</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Vert Bouteille">Vert Bouteille</option>
+            <option value="Beige">Beige</option>
+        </select>
+    </div>
+
+    <button class="btn-wa" onclick="addToCart('ceinture-mdamma-fassia', 'Mdamma Fassia', 150, '/images/ceinture-mdamma-fassia/1.webp')" style="width:100%; border:none; cursor:pointer;">
+      🛒 Ajouter au panier
+    </button>
+  </div>
+</div>
+
+<script src="/assets/footer.js" defer></script>
+<script>
+function addToCart(id, name, price, image) {
+    const size = document.getElementById('size-select').value;
+    const color = document.getElementById('color-select').value;
+    
+    let cart = JSON.parse(localStorage.getItem('nova_style_cart')) || [];
+    let options = { Taille: size, Couleur: color };
+    let key = id + "_" + JSON.stringify(options);
+    
+    let existing = cart.find(i => i.key === key);
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({
+            key: key,
+            id: id,
+            name: name,
+            price: price,
+            image: image,
+            options: options,
+            quantity: 1,
+            timestamp: Date.now()
+        });
+    }
+    
+    localStorage.setItem('nova_style_cart', JSON.stringify(cart));
+    
+    // Redirect to cart
+    window.location.href = "/cart.html";
+}
+</script>
+</body>
+</html>

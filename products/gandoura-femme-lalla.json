@@ -1,0 +1,40 @@
+{
+  "slug": "gandoura-femme-lalla",
+  "name": "Gandoura Lalla",
+  "categoryId": "gandoura-femme",
+  "category": "Gandoura Femme",
+  "active": true,
+  "images": [
+    "/images/gandoura-femme-lalla/1.webp",
+    "/images/gandoura-femme-lalla/2.webp"
+  ],
+  "description": "Gandoura décontractée style caftan en coton doux. Broderies florales colorées et finitions artisanales. Confort absolu pour la maison ou les sorties d'été.",
+  "seo": {
+    "title": "Gandoura Lalla | Le Jellaba",
+    "description": "Gandoura décontractée style caftan en coton doux. Broderies florales colorées."
+  },
+  "axes": {
+    "order": ["Taille", "Couleur"],
+    "options": {
+      "Taille": ["S", "M", "L", "XL", "2XL"],
+      "Couleur": ["Bleu nuit", "Bordeaux", "Vert bouteille"]
+    }
+  },
+  "variants": [
+    { "axes": { "Taille": "S", "Couleur": "Bleu nuit" }, "price": 450, "sku": "GF-CC-S-BL" },
+    { "axes": { "Taille": "M", "Couleur": "Bleu nuit" }, "price": 450, "sku": "GF-CC-M-BL" },
+    { "axes": { "Taille": "L", "Couleur": "Bleu nuit" }, "price": 450, "sku": "GF-CC-L-BL" },
+    { "axes": { "Taille": "XL", "Couleur": "Bleu nuit" }, "price": 450, "sku": "GF-CC-XL-BL" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bleu nuit" }, "price": 450, "sku": "GF-CC-2XL-BL" },
+    { "axes": { "Taille": "S", "Couleur": "Bordeaux" }, "price": 450, "sku": "GF-CC-S-BO" },
+    { "axes": { "Taille": "M", "Couleur": "Bordeaux" }, "price": 450, "sku": "GF-CC-M-BO" },
+    { "axes": { "Taille": "L", "Couleur": "Bordeaux" }, "price": 450, "sku": "GF-CC-L-BO" },
+    { "axes": { "Taille": "XL", "Couleur": "Bordeaux" }, "price": 450, "sku": "GF-CC-XL-BO" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bordeaux" }, "price": 450, "sku": "GF-CC-2XL-BO" },
+    { "axes": { "Taille": "S", "Couleur": "Vert bouteille" }, "price": 450, "sku": "GF-CC-S-VE" },
+    { "axes": { "Taille": "M", "Couleur": "Vert bouteille" }, "price": 450, "sku": "GF-CC-M-VE" },
+    { "axes": { "Taille": "L", "Couleur": "Vert bouteille" }, "price": 450, "sku": "GF-CC-L-VE" },
+    { "axes": { "Taille": "XL", "Couleur": "Vert bouteille" }, "price": 450, "sku": "GF-CC-XL-VE" },
+    { "axes": { "Taille": "2XL", "Couleur": "Vert bouteille" }, "price": 450, "sku": "GF-CC-2XL-VE" }
+  ]
+}

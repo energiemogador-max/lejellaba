@@ -1,0 +1,45 @@
+{
+  "slug": "jellaba-homme-atlas",
+  "name": "Jellaba Atlas",
+  "categoryId": "jellaba-homme",
+  "category": "Jellaba Homme",
+  "active": true,
+  "images": [
+    "/images/jellaba-homme-atlas/1.webp",
+    "/images/jellaba-homme-atlas/2.webp"
+  ],
+  "description": "Jellaba classique pour homme en tissu Mlifa de premier choix, chaud et structuré. Coupe marocaine traditionnelle avec couture artisanale sfifa et finition impeccable. Idéale pour les fêtes religieuses et cérémonies.",
+  "seo": {
+    "title": "Jellaba Atlas | Le Jellaba",
+    "description": "Jellaba classique pour homme en tissu Mlifa de premier choix, chaud et structuré."
+  },
+  "axes": {
+    "order": ["Taille", "Couleur"],
+    "options": {
+      "Taille": ["S", "M", "L", "XL", "2XL"],
+      "Couleur": ["Gris anthracite", "Bleu nuit", "Bordeaux", "Blanc cassé"]
+    }
+  },
+  "variants": [
+    { "axes": { "Taille": "S", "Couleur": "Gris anthracite" }, "price": 1100, "sku": "JH-MC-S-GR" },
+    { "axes": { "Taille": "M", "Couleur": "Gris anthracite" }, "price": 1100, "sku": "JH-MC-M-GR" },
+    { "axes": { "Taille": "L", "Couleur": "Gris anthracite" }, "price": 1100, "sku": "JH-MC-L-GR" },
+    { "axes": { "Taille": "XL", "Couleur": "Gris anthracite" }, "price": 1100, "sku": "JH-MC-XL-GR" },
+    { "axes": { "Taille": "2XL", "Couleur": "Gris anthracite" }, "price": 1100, "sku": "JH-MC-2XL-GR" },
+    { "axes": { "Taille": "S", "Couleur": "Bleu nuit" }, "price": 1100, "sku": "JH-MC-S-BL" },
+    { "axes": { "Taille": "M", "Couleur": "Bleu nuit" }, "price": 1100, "sku": "JH-MC-M-BL" },
+    { "axes": { "Taille": "L", "Couleur": "Bleu nuit" }, "price": 1100, "sku": "JH-MC-L-BL" },
+    { "axes": { "Taille": "XL", "Couleur": "Bleu nuit" }, "price": 1100, "sku": "JH-MC-XL-BL" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bleu nuit" }, "price": 1100, "sku": "JH-MC-2XL-BL" },
+    { "axes": { "Taille": "S", "Couleur": "Bordeaux" }, "price": 1100, "sku": "JH-MC-S-BO" },
+    { "axes": { "Taille": "M", "Couleur": "Bordeaux" }, "price": 1100, "sku": "JH-MC-M-BO" },
+    { "axes": { "Taille": "L", "Couleur": "Bordeaux" }, "price": 1100, "sku": "JH-MC-L-BO" },
+    { "axes": { "Taille": "XL", "Couleur": "Bordeaux" }, "price": 1100, "sku": "JH-MC-XL-BO" },
+    { "axes": { "Taille": "2XL", "Couleur": "Bordeaux" }, "price": 1100, "sku": "JH-MC-2XL-BO" },
+    { "axes": { "Taille": "S", "Couleur": "Blanc cassé" }, "price": 1100, "sku": "JH-MC-S-BC" },
+    { "axes": { "Taille": "M", "Couleur": "Blanc cassé" }, "price": 1100, "sku": "JH-MC-M-BC" },
+    { "axes": { "Taille": "L", "Couleur": "Blanc cassé" }, "price": 1100, "sku": "JH-MC-L-BC" },
+    { "axes": { "Taille": "XL", "Couleur": "Blanc cassé" }, "price": 1100, "sku": "JH-MC-XL-BC" },
+    { "axes": { "Taille": "2XL", "Couleur": "Blanc cassé" }, "price": 1100, "sku": "JH-MC-2XL-BC" }
+  ]
+}

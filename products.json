@@ -1,88 +1,88 @@
 {
   "products": [
     {
-      "id": "jellaba-femme-traditionnelle-crepe",
-      "name": "Jellaba Traditionnelle en Crêpe",
+      "id": "jellaba-femme-yasmine",
+      "name": "Jellaba Yasmine",
       "price": 750,
       "category": "Jellaba Femme",
-      "image": "/images/jellaba-femme-traditionnelle-crepe/1.webp"
+      "image": "/images/jellaba-femme-yasmine/1.webp"
     },
     {
-      "id": "jellaba-femme-moderne-soie",
-      "name": "Jellaba Moderne en Soie de Targa",
+      "id": "jellaba-femme-anfa",
+      "name": "Jellaba Anfa",
       "price": 950,
       "category": "Jellaba Femme",
-      "image": "/images/jellaba-femme-moderne-soie/1.webp"
+      "image": "/images/jellaba-femme-anfa/1.webp"
     },
     {
-      "id": "jellaba-homme-mlifa-classic",
-      "name": "Jellaba Homme Mlifa Classique",
+      "id": "jellaba-homme-atlas",
+      "name": "Jellaba Atlas",
       "price": 1100,
       "category": "Jellaba Homme",
-      "image": "/images/jellaba-homme-mlifa-classic/1.webp"
+      "image": "/images/jellaba-homme-atlas/1.webp"
     },
     {
-      "id": "jellaba-homme-sousdi-premium",
-      "name": "Jellaba Homme Sousdi Premium",
+      "id": "jellaba-homme-fes",
+      "name": "Jellaba Fès",
       "price": 1500,
       "category": "Jellaba Homme",
-      "image": "/images/jellaba-homme-sousdi-premium/1.webp"
+      "image": "/images/jellaba-homme-fes/1.webp"
     },
     {
-      "id": "gandoura-femme-premium-randa",
-      "name": "Gandoura Femme Randa Élégante",
+      "id": "gandoura-femme-zahra",
+      "name": "Gandoura Zahra",
       "price": 650,
       "category": "Gandoura Femme",
-      "image": "/images/gandoura-femme-premium-randa/1.webp"
+      "image": "/images/gandoura-femme-zahra/1.webp"
     },
     {
-      "id": "gandoura-femme-coton-caftan",
-      "name": "Gandoura Femme en Coton Style Caftan",
+      "id": "gandoura-femme-lalla",
+      "name": "Gandoura Lalla",
       "price": 450,
       "category": "Gandoura Femme",
-      "image": "/images/gandoura-femme-coton-caftan/1.webp"
+      "image": "/images/gandoura-femme-lalla/1.webp"
     },
     {
-      "id": "gandoura-homme-mousseline",
-      "name": "Gandoura Homme Mousseline Haute Qualité",
+      "id": "gandoura-homme-sahara",
+      "name": "Gandoura Sahara",
       "price": 550,
       "category": "Gandoura Homme",
-      "image": "/images/gandoura-homme-mousseline/1.webp"
+      "image": "/images/gandoura-homme-sahara/1.webp"
     },
     {
-      "id": "gandoura-homme-coton-dore",
-      "name": "Gandoura Homme Coton Brodé Or",
+      "id": "gandoura-homme-medina",
+      "name": "Gandoura Medina",
       "price": 600,
       "category": "Gandoura Homme",
-      "image": "/images/gandoura-homme-coton-dore/1.webp"
+      "image": "/images/gandoura-homme-medina/1.webp"
     },
     {
-      "id": "jellaba-enfant-fille-brodee",
-      "name": "Jellaba Enfant Fille Brodée",
+      "id": "jellaba-enfant-nour",
+      "name": "Jellaba Nour",
       "price": 350,
       "category": "Jellaba Enfant",
-      "image": "/images/jellaba-enfant-fille-brodee/1.webp"
+      "image": "/images/jellaba-enfant-nour/1.webp"
     },
     {
-      "id": "jellaba-enfant-garcon-mlifa",
-      "name": "Jellaba Enfant Garçon Classique",
+      "id": "jellaba-enfant-amine",
+      "name": "Jellaba Amine",
       "price": 400,
       "category": "Jellaba Enfant",
-      "image": "/images/jellaba-enfant-garcon-mlifa/1.webp"
+      "image": "/images/jellaba-enfant-amine/1.webp"
     },
     {
-      "id": "babouches-cuir-artisanale",
-      "name": "Babouches en Cuir Véritable",
+      "id": "babouches-marrakchia",
+      "name": "Babouches Marrakchia",
       "price": 250,
       "category": "Accessoires",
-      "image": "/images/babouches-cuir-artisanale/1.webp"
+      "image": "/images/babouches-marrakchia/1.webp"
     },
     {
-      "id": "ceinture-medina-brodee",
-      "name": "Ceinture Brodée Mdamma",
+      "id": "ceinture-mdamma-fassia",
+      "name": "Mdamma Fassia",
       "price": 150,
       "category": "Accessoires",
-      "image": "/images/ceinture-medina-brodee/1.webp"
+      "image": "/images/ceinture-mdamma-fassia/1.webp"
     }
   ]
 }
