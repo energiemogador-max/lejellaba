@@ -183,5 +183,5 @@ async function hydrate() {
 
 hydrate().catch(err => {
   console.error('[product-loader]', err);
-  root.insertAdjacentHTML('beforeend', `<p style="color:red;padding:20px">Erreur de chargement du produit. <a href="/">Retour à l'accueil</a></p>`);
+  root.insertAdjacentHTML('beforeend', `<p style="color:red;padding:20px">Erreur de chargement du produit. <a href="/lejellaba/">Retour à l'accueil</a></p>`);
 });

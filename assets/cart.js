@@ -236,7 +236,7 @@ function finalizeCheckout(customerDetails) {
       }
       clearCart();
       sessionStorage.setItem("nova_confirmation_order",JSON.stringify({...orderData,id:newRef.key}));
-      window.location.href="/confirmation.html";
+      window.location.href="/lejellaba/confirmation.html";
     })
     .catch(err=>{
       document.querySelectorAll(".btn-submit,[data-submit-order]").forEach(b=>{b.disabled=false;b.textContent="Envoyer la commande";});

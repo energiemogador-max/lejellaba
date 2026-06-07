@@ -6,7 +6,7 @@
  *   <div id="products-grid" data-category-id="sdb-premium"></div>
  *   <!-- OR for curated slug lists (e.g. salon) -->
  *   <div id="products-grid" data-slugs="slug-a,slug-b,slug-c"></div>
- *   <script src="/assets/category-loader.js" defer></script>
+ *   <script src="/lejellaba/assets/category-loader.js" defer></script>
  */
 
 (async function () {
@@ -34,7 +34,7 @@
       if (c && c._ts && Date.now() - c._ts < TTL) { window.__NOVA_CATALOG__ = c; return c; }
     } catch {}
     const day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-    const res = await fetch('/products-index.json?v=' + day);
+    const res = await fetch('/lejellaba/products-index.json?v=' + day);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     data._ts = Date.now();
@@ -47,8 +47,8 @@
     const imgAttrs = eager
       ? ' fetchpriority="high" decoding="sync"'
       : ' loading="lazy" decoding="async"';
-    const thumbUrl = p.image ? `https://wsrv.nl/?url=lejellaba.ma${encodeURI(p.image)}&w=400&h=400&fit=cover&output=webp&q=80` : '';
-    return `<a class="product-card" href="/produits/${p.slug}/">
+    const thumbUrl = p.image ? "/lejellaba" + p.image : '';
+    return `<a class="product-card" href="/lejellaba/produits/${p.slug}/">
   <div class="card-img"><img src="${thumbUrl}" alt="${p.name.replace(/"/g, '&quot;')}" width="400" height="400"${imgAttrs}
     onload="this.classList.add('img-ready');this.closest('.card-img').classList.add('img-ready')"
     onerror="this.closest('.card-img').classList.add('img-ready')"></div>
@@ -81,7 +81,7 @@
     // Preload first 4 images before rendering so browser fetches in parallel
     products.slice(0, 4).forEach((p, i) => {
       if (!p.image) return;
-      const thumbUrl = `https://wsrv.nl/?url=lejellaba.ma${p.image}&w=400&h=400&fit=cover&output=webp&q=80`;
+      const thumbUrl = "/lejellaba" + p.image;
       const link = document.createElement('link');
       link.rel = 'preload'; link.as = 'image'; link.href = thumbUrl;
       if (i === 0) link.setAttribute('fetchpriority', 'high');

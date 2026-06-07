@@ -4,7 +4,7 @@
  * Each category → beautiful title + 2 rows × 5 products (10 total) + "Voir tous" link.
  */
 
-const CATEGORY_PAGE = id => `/categorie/${id}/`;
+const CATEGORY_PAGE = id => `/lejellaba/categorie/${id}/`;
 const UNSAFE_SLUG   = /[^\x00-\x7F]/;
 
 function fmtPrice(v) {
@@ -22,7 +22,7 @@ async function fetchCatalog() {
   } catch {}
   // Daily cache buster — same URL all day so browser HTTP cache works
   const day = new Date().toISOString().slice(0, 10).replace(/-/g, "");
-  const res = await fetch("/products-index.json?v=" + day);
+  const res = await fetch("/lejellaba/products-index.json?v=" + day);
   if (!res.ok) throw new Error("HTTP " + res.status);
   const data = await res.json();
   data._ts = Date.now();
@@ -36,10 +36,10 @@ function productCardHTML(p, eager) {
   const imgAttrs = eager
     ? ' fetchpriority="high" decoding="sync"'
     : ' loading="lazy" decoding="async"';
-  const thumbUrl = p.image ? `https://wsrv.nl/?url=lejellaba.ma${p.image}&w=400&h=400&fit=cover&output=webp&q=80` : '';
+  const thumbUrl = p.image ? "/lejellaba" + p.image : '';
   const priceMin = p.price?.min;
   const priceLabel = priceMin != null ? "À partir de " + fmtPrice(priceMin) : "";
-  return `<a class="product-card" href="/produits/${p.slug}/">
+  return `<a class="product-card" href="/lejellaba/produits/${p.slug}/">
   <div class="card-img"><img src="${thumbUrl}" alt="${(p.name || "").replace(/"/g, "&quot;")}" width="400" height="400"${imgAttrs}
     onload="this.classList.add('img-ready');this.closest('.card-img').classList.add('img-ready')"
     onerror="this.closest('.card-img').classList.add('img-ready')"></div>
@@ -79,7 +79,7 @@ function productCardHTML(p, eager) {
   const firstItems = categories.flatMap(cat => (byCat[cat.id] || []).slice(0, 1)).slice(0, 4);
   firstItems.forEach((p, i) => {
     if (!p.image) return;
-    const thumbUrl = `https://wsrv.nl/?url=lejellaba.ma${p.image}&w=400&h=400&fit=cover&output=webp&q=80`;
+    const thumbUrl = "/lejellaba" + p.image;
     const link = document.createElement("link");
     link.rel = "preload"; link.as = "image"; link.href = thumbUrl;
     if (i === 0) link.setAttribute("fetchpriority", "high");

@@ -17,8 +17,8 @@ if(!sid){sid="s_"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
 
 function pageLabel(p){
   if(p==="/"||p==="") return "🏠 Accueil";
-  if(p.startsWith("/produits/")) return "🪞 "+p.split("/")[2].replace(/-/g," ").slice(0,38);
-  if(p.startsWith("/categorie/")) return "📂 "+p.split("/")[2].replace(/-/g," ");
+  if(p.startsWith("/lejellaba/produits/")) return "🪞 "+p.split("/")[2].replace(/-/g," ").slice(0,38);
+  if(p.startsWith("/lejellaba/categorie/")) return "📂 "+p.split("/")[2].replace(/-/g," ");
   if(p.includes("cart")) return "🛒 Panier";
   if(p.includes("confirmation")) return "✅ Confirmation";
   return "📄 "+p.split("/").filter(Boolean).join(" › ").slice(0,38);

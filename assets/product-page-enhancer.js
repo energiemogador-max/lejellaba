@@ -148,7 +148,7 @@
  * product-qty.js — Nova Style product page enhancements
  * ────────────────────────────────────────────────────────
  * Add ONE line to every product page, just before </body>:
- *   <script src="/assets/product-qty.js"></script>
+ *   <script src="/lejellaba/assets/product-qty.js"></script>
  *
  * What it does (zero HTML changes needed in product pages):
  *   1. Injects a Quantité stepper (− / + input) above the add-to-cart button

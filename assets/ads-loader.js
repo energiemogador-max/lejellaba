@@ -2,7 +2,7 @@
 // Included on every public page; safe to load when config is absent.
 (async () => {
   try {
-    const res = await fetch('/ads_config.json');
+    const res = await fetch('/lejellaba/ads_config.json');
     if (!res.ok) return;
     const cfg = await res.json();
     if (!cfg) return;

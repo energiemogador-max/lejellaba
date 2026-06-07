@@ -1,7 +1,7 @@
 /**
  * product-utils.js
  * Shared utilities for admin.html and nouveau-produit.jsx
- * ES module — import with: import { ghCommit, buildProductPage, ... } from '/assets/product-utils.js';
+ * ES module — import with: import { ghCommit, buildProductPage, ... } from '/lejellaba/assets/product-utils.js';
  */
 
 export function fmtPrice(v) {
@@ -63,7 +63,7 @@ export function buildProductPage(p) {
   const seo    = p.seo || {};
   const title  = seo.title || name;
   const desc   = (seo.description || '').replace(/"/g, '&quot;');
-  const img    = (p.images || [])[0] || `/images/${slug}/1.webp`;
+  const img    = (p.images || [])[0] || `/lejellaba/images/${slug}/1.webp`;
   const cat    = p.category || 'Miroirs';
   const catUrl = String(p.categoryId || '').startsWith('sdb') ? '/miroir-salle-de-bain/' : '/';
   const variants = p.variants || [];
@@ -123,8 +123,8 @@ export function buildProductPage(p) {
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${desc}">
 <meta name="twitter:image" content="${img}">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" type="image/png" href="/lejellaba/assets/favicon.png">
+<link rel="stylesheet" href="/lejellaba/assets/style.css">
 <link rel="preconnect" href="https://nova-9ac76-default-rtdb.europe-west1.firebasedatabase.app" crossorigin>
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 </head>
@@ -132,10 +132,10 @@ export function buildProductPage(p) {
 <script type="application/ld+json">${schemaProduct}</script>
 <script type="application/ld+json">${schemaBreadcrumb}</script>
 
-<script src="/assets/ads-loader.js" defer></script>
-<script src="/assets/header.js" defer></script>
+<script src="/lejellaba/assets/ads-loader.js" defer></script>
+<script src="/lejellaba/assets/header.js" defer></script>
 
-<nav class="breadcrumb"><a href="/">Accueil</a> › <a href="${catUrl}">${cat}</a> › <span>${name}</span></nav>
+<nav class="breadcrumb"><a href="/lejellaba/">Accueil</a> › <a href="${catUrl}">${cat}</a> › <span>${name}</span></nav>
 
 <article class="product-page" id="product-root" data-slug="${slug}">
   <div class="product-gallery" id="p-gallery"></div>
@@ -157,14 +157,14 @@ export function buildProductPage(p) {
 
 <section class="reviews-section">
   <ns-reviews-widget product-id="${slug}"></ns-reviews-widget>
-  <script type="module" src="/assets/reviews-widget.js"></script>
+  <script type="module" src="/lejellaba/assets/reviews-widget.js"></script>
 </section>
 
-<script type="module" src="/assets/product-loader.js"></script>
-<script src="/assets/product-qty.js" defer></script>
-<script src="/assets/footer.js" defer></script>
-<script type="module" src="/assets/cart.js"></script>
-<script type="module" src="/assets/visitor-tracker.js"></script>
+<script type="module" src="/lejellaba/assets/product-loader.js"></script>
+<script src="/lejellaba/assets/product-qty.js" defer></script>
+<script src="/lejellaba/assets/footer.js" defer></script>
+<script type="module" src="/lejellaba/assets/cart.js"></script>
+<script type="module" src="/lejellaba/assets/visitor-tracker.js"></script>
 </body>
 </html>
 `;

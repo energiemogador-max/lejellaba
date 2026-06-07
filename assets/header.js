@@ -5,12 +5,12 @@
  */
 (function () {
   var NAV_LINKS = [
-    { href: "/categorie/jellaba-femme/",   label: "Jellaba Femme" },
-    { href: "/categorie/jellaba-homme/",   label: "Jellaba Homme" },
-    { href: "/categorie/gandoura-femme/", label: "Gandoura Femme" },
-    { href: "/categorie/gandoura-homme/", label: "Gandoura Homme" },
-    { href: "/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
-    { href: "/categorie/accessoires/",     label: "Accessoires" },
+    { href: "/lejellaba/categorie/jellaba-femme/",   label: "Jellaba Femme" },
+    { href: "/lejellaba/categorie/jellaba-homme/",   label: "Jellaba Homme" },
+    { href: "/lejellaba/categorie/gandoura-femme/", label: "Gandoura Femme" },
+    { href: "/lejellaba/categorie/gandoura-homme/", label: "Gandoura Homme" },
+    { href: "/lejellaba/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
+    { href: "/lejellaba/categorie/accessoires/",     label: "Accessoires" },
   ];
 
   var navItems = NAV_LINKS.map(function(l) {
@@ -20,8 +20,8 @@
   var html =
     '<header class="site-header" id="site-header" dir="ltr">\n' +
     '  <div class="header-inner">\n' +
-    '    <a href="/" class="brand" aria-label="Le Jellaba — Accueil">\n' +
-    '      <img src="/logo.png" alt="Le Jellaba" class="header-logo" width="40" height="40">\n' +
+    '    <a href="/lejellaba/" class="brand" aria-label="Le Jellaba — Accueil">\n' +
+    '      <img src="/lejellaba/logo.png" alt="Le Jellaba" class="header-logo" width="40" height="40">\n' +
     '      <div class="brand-text">\n' +
     '        <span class="brand-name">Le Jellaba</span>\n' +
     '        <span class="brand-tagline">Jellabas & Gandouras Traditionnelles</span>\n' +
@@ -31,7 +31,7 @@
     '      ' + navItems + '\n' +
     '    </nav>\n' +
     '    <div class="header-actions">\n' +
-    '      <a href="/cart.html" class="cart-icon-wrap" id="cart-icon-wrap" aria-label="Panier">\n' +
+    '      <a href="/lejellaba/cart.html" class="cart-icon-wrap" id="cart-icon-wrap" aria-label="Panier">\n' +
     '        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>\n' +
     '        <span class="cart-badge" id="cart-icon-badge" style="display:none">0</span>\n' +
     '      </a>\n' +

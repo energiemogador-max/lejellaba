@@ -5,21 +5,21 @@
  */
 (function () {
   var YEAR = new Date().getFullYear();  var CATS = [
-    { href: "/categorie/jellaba-femme/",   label: "Jellaba Femme" },
-    { href: "/categorie/jellaba-homme/",   label: "Jellaba Homme" },
-    { href: "/categorie/gandoura-femme/", label: "Gandoura Femme" },
-    { href: "/categorie/gandoura-homme/", label: "Gandoura Homme" },
-    { href: "/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
-    { href: "/categorie/accessoires/",     label: "Accessoires" },
+    { href: "/lejellaba/categorie/jellaba-femme/",   label: "Jellaba Femme" },
+    { href: "/lejellaba/categorie/jellaba-homme/",   label: "Jellaba Homme" },
+    { href: "/lejellaba/categorie/gandoura-femme/", label: "Gandoura Femme" },
+    { href: "/lejellaba/categorie/gandoura-homme/", label: "Gandoura Homme" },
+    { href: "/lejellaba/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
+    { href: "/lejellaba/categorie/accessoires/",     label: "Accessoires" },
   ];
 
   var SEO_PAGES = [
-    { href: "/categorie/jellaba-femme/",   label: "Jellaba Femme Chic" },
-    { href: "/categorie/jellaba-homme/",   label: "Jellaba Homme Moderne" },
-    { href: "/categorie/gandoura-femme/", label: "Gandoura Femme Élégante" },
-    { href: "/categorie/gandoura-homme/", label: "Gandoura Homme Traditionnelle" },
-    { href: "/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
-    { href: "/categorie/accessoires/",     label: "Babouches & Accessoires" },
+    { href: "/lejellaba/categorie/jellaba-femme/",   label: "Jellaba Femme Chic" },
+    { href: "/lejellaba/categorie/jellaba-homme/",   label: "Jellaba Homme Moderne" },
+    { href: "/lejellaba/categorie/gandoura-femme/", label: "Gandoura Femme Élégante" },
+    { href: "/lejellaba/categorie/gandoura-homme/", label: "Gandoura Homme Traditionnelle" },
+    { href: "/lejellaba/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
+    { href: "/lejellaba/categorie/accessoires/",     label: "Babouches & Accessoires" },
   ];
 
   var CITIES = [
@@ -81,8 +81,8 @@
 '  "knowsAbout": ["Jellaba femme","Jellaba homme","Gandoura femme","Gandoura homme","Vêtements traditionnels marocains","Artisanat Marocain"]\n' +
 '}\n' +
 '<\/script>\n' +
-'<script type="module" src="/assets/card-reviews-injector.js"></script>\n' +
-'<script src="/assets/contact.js"></script>';
+'<script type="module" src="/lejellaba/assets/card-reviews-injector.js"></script>\n' +
+'<script src="/lejellaba/assets/contact.js"></script>';
 
   function inject() {
     var frag = document.createRange().createContextualFragment(html);
@@ -92,7 +92,7 @@
   function fixCardImages() {
     document.querySelectorAll('.card-img img').forEach(function (img) {
       var src = img.getAttribute('src');
-      if (src && src.startsWith('/images/') && src.indexOf('wsrv.nl') === -1) {
+      if (false) {
         // encodeURI is required for Arabic/special characters in URLs
         img.setAttribute('src', 'https://wsrv.nl/?url=lejellaba.ma' + encodeURI(src) + '&w=400&h=400&fit=cover&output=webp&q=80');
       }
