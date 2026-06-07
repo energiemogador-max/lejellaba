@@ -2,12 +2,42 @@
   "version": 2,
   "generated": "2026-05-31",
   "categories": [
-    { "id": "jellaba-femme", "name": "Jellaba Femme", "raw": "Jellaba Femme", "count": 2 },
-    { "id": "jellaba-homme", "name": "Jellaba Homme", "raw": "Jellaba Homme", "count": 2 },
-    { "id": "gandoura-femme", "name": "Gandoura Femme", "raw": "Gandoura Femme", "count": 2 },
-    { "id": "gandoura-homme", "name": "Gandoura Homme", "raw": "Gandoura Homme", "count": 2 },
-    { "id": "jellaba-enfant", "name": "Jellaba Enfant", "raw": "Jellaba Enfant", "count": 2 },
-    { "id": "accessoires", "name": "Accessoires", "raw": "Accessoires", "count": 2 }
+    {
+      "id": "jellaba-femme",
+      "name": "Jellaba Femme",
+      "raw": "Jellaba Femme",
+      "count": 5
+    },
+    {
+      "id": "jellaba-homme",
+      "name": "Jellaba Homme",
+      "raw": "Jellaba Homme",
+      "count": 5
+    },
+    {
+      "id": "gandoura-femme",
+      "name": "Gandoura Femme",
+      "raw": "Gandoura Femme",
+      "count": 5
+    },
+    {
+      "id": "gandoura-homme",
+      "name": "Gandoura Homme",
+      "raw": "Gandoura Homme",
+      "count": 5
+    },
+    {
+      "id": "jellaba-enfant",
+      "name": "Jellaba Enfant",
+      "raw": "Jellaba Enfant",
+      "count": 4
+    },
+    {
+      "id": "accessoires",
+      "name": "Accessoires",
+      "raw": "Accessoires",
+      "count": 5
+    }
   ],
   "products": [
     {
@@ -18,7 +48,10 @@
       "categoryId": "jellaba-femme",
       "active": true,
       "image": "/images/jellaba-femme-yasmine/1.webp",
-      "price": { "min": 750, "max": 750 },
+      "price": {
+        "min": 750,
+        "max": 750
+      },
       "hasVariants": true,
       "variantCount": 20,
       "featured": true
@@ -31,7 +64,10 @@
       "categoryId": "jellaba-femme",
       "active": true,
       "image": "/images/jellaba-femme-anfa/1.webp",
-      "price": { "min": 950, "max": 950 },
+      "price": {
+        "min": 950,
+        "max": 950
+      },
       "hasVariants": true,
       "variantCount": 20,
       "featured": true
@@ -44,7 +80,10 @@
       "categoryId": "jellaba-homme",
       "active": true,
       "image": "/images/jellaba-homme-atlas/1.webp",
-      "price": { "min": 1100, "max": 1100 },
+      "price": {
+        "min": 1100,
+        "max": 1100
+      },
       "hasVariants": true,
       "variantCount": 20,
       "featured": true
@@ -57,7 +96,10 @@
       "categoryId": "jellaba-homme",
       "active": true,
       "image": "/images/jellaba-homme-fes/1.webp",
-      "price": { "min": 1500, "max": 1500 },
+      "price": {
+        "min": 1500,
+        "max": 1500
+      },
       "hasVariants": true,
       "variantCount": 12,
       "featured": true
@@ -70,7 +112,10 @@
       "categoryId": "gandoura-femme",
       "active": true,
       "image": "/images/gandoura-femme-zahra/1.webp",
-      "price": { "min": 650, "max": 650 },
+      "price": {
+        "min": 650,
+        "max": 650
+      },
       "hasVariants": true,
       "variantCount": 20,
       "featured": true
@@ -83,7 +128,10 @@
       "categoryId": "gandoura-femme",
       "active": true,
       "image": "/images/gandoura-femme-lalla/1.webp",
-      "price": { "min": 450, "max": 450 },
+      "price": {
+        "min": 450,
+        "max": 450
+      },
       "hasVariants": true,
       "variantCount": 15,
       "featured": true
@@ -96,7 +144,10 @@
       "categoryId": "gandoura-homme",
       "active": true,
       "image": "/images/gandoura-homme-sahara/1.webp",
-      "price": { "min": 550, "max": 550 },
+      "price": {
+        "min": 550,
+        "max": 550
+      },
       "hasVariants": true,
       "variantCount": 15,
       "featured": true
@@ -109,7 +160,10 @@
       "categoryId": "gandoura-homme",
       "active": true,
       "image": "/images/gandoura-homme-medina/1.webp",
-      "price": { "min": 600, "max": 600 },
+      "price": {
+        "min": 600,
+        "max": 600
+      },
       "hasVariants": true,
       "variantCount": 15,
       "featured": true
@@ -122,7 +176,10 @@
       "categoryId": "jellaba-enfant",
       "active": true,
       "image": "/images/jellaba-enfant-nour/1.webp",
-      "price": { "min": 350, "max": 350 },
+      "price": {
+        "min": 350,
+        "max": 350
+      },
       "hasVariants": true,
       "variantCount": 12,
       "featured": true
@@ -135,7 +192,10 @@
       "categoryId": "jellaba-enfant",
       "active": true,
       "image": "/images/jellaba-enfant-amine/1.webp",
-      "price": { "min": 400, "max": 400 },
+      "price": {
+        "min": 400,
+        "max": 400
+      },
       "hasVariants": true,
       "variantCount": 12,
       "featured": true
@@ -148,7 +208,10 @@
       "categoryId": "accessoires",
       "active": true,
       "image": "/images/babouches-marrakchia/1.webp",
-      "price": { "min": 250, "max": 250 },
+      "price": {
+        "min": 250,
+        "max": 250
+      },
       "hasVariants": true,
       "variantCount": 21,
       "featured": true
@@ -161,10 +224,285 @@
       "categoryId": "accessoires",
       "active": true,
       "image": "/images/ceinture-mdamma-fassia/1.webp",
-      "price": { "min": 150, "max": 150 },
+      "price": {
+        "min": 150,
+        "max": 150
+      },
       "hasVariants": true,
       "variantCount": 2,
       "featured": true
+    },
+    {
+      "id": "jellaba-femme-salma",
+      "slug": "jellaba-femme-salma",
+      "name": "Jellaba Salma",
+      "category": "Jellaba Femme",
+      "categoryId": "jellaba-femme",
+      "active": true,
+      "image": "/images/jellaba-femme-salma/1.webp",
+      "price": {
+        "min": 820,
+        "max": 820
+      },
+      "hasVariants": true,
+      "variantCount": 25,
+      "featured": false
+    },
+    {
+      "id": "jellaba-femme-chaima",
+      "slug": "jellaba-femme-chaima",
+      "name": "Jellaba Chaïma",
+      "category": "Jellaba Femme",
+      "categoryId": "jellaba-femme",
+      "active": true,
+      "image": "/images/jellaba-femme-chaima/1.webp",
+      "price": {
+        "min": 1150,
+        "max": 1150
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "jellaba-femme-najwa",
+      "slug": "jellaba-femme-najwa",
+      "name": "Jellaba Najwa",
+      "category": "Jellaba Femme",
+      "categoryId": "jellaba-femme",
+      "active": true,
+      "image": "/images/jellaba-femme-najwa/1.webp",
+      "price": {
+        "min": 690,
+        "max": 690
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "jellaba-homme-rif",
+      "slug": "jellaba-homme-rif",
+      "name": "Jellaba Rif",
+      "category": "Jellaba Homme",
+      "categoryId": "jellaba-homme",
+      "active": true,
+      "image": "/images/jellaba-homme-rif/1.webp",
+      "price": {
+        "min": 980,
+        "max": 980
+      },
+      "hasVariants": true,
+      "variantCount": 25,
+      "featured": false
+    },
+    {
+      "id": "jellaba-homme-toubkal",
+      "slug": "jellaba-homme-toubkal",
+      "name": "Jellaba Toubkal",
+      "category": "Jellaba Homme",
+      "categoryId": "jellaba-homme",
+      "active": true,
+      "image": "/images/jellaba-homme-toubkal/1.webp",
+      "price": {
+        "min": 1350,
+        "max": 1350
+      },
+      "hasVariants": true,
+      "variantCount": 15,
+      "featured": false
+    },
+    {
+      "id": "jellaba-homme-sahel",
+      "slug": "jellaba-homme-sahel",
+      "name": "Jellaba Sahel",
+      "category": "Jellaba Homme",
+      "categoryId": "jellaba-homme",
+      "active": true,
+      "image": "/images/jellaba-homme-sahel/1.webp",
+      "price": {
+        "min": 780,
+        "max": 780
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-femme-ines",
+      "slug": "gandoura-femme-ines",
+      "name": "Gandoura Inès",
+      "category": "Gandoura Femme",
+      "categoryId": "gandoura-femme",
+      "active": true,
+      "image": "/images/gandoura-femme-ines/1.webp",
+      "price": {
+        "min": 590,
+        "max": 590
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-femme-warda",
+      "slug": "gandoura-femme-warda",
+      "name": "Gandoura Warda",
+      "category": "Gandoura Femme",
+      "categoryId": "gandoura-femme",
+      "active": true,
+      "image": "/images/gandoura-femme-warda/1.webp",
+      "price": {
+        "min": 680,
+        "max": 680
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-femme-houda",
+      "slug": "gandoura-femme-houda",
+      "name": "Gandoura Houda",
+      "category": "Gandoura Femme",
+      "categoryId": "gandoura-femme",
+      "active": true,
+      "image": "/images/gandoura-femme-houda/1.webp",
+      "price": {
+        "min": 480,
+        "max": 480
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-homme-badr",
+      "slug": "gandoura-homme-badr",
+      "name": "Gandoura Badr",
+      "category": "Gandoura Homme",
+      "categoryId": "gandoura-homme",
+      "active": true,
+      "image": "/images/gandoura-homme-badr/1.webp",
+      "price": {
+        "min": 560,
+        "max": 560
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-homme-ziane",
+      "slug": "gandoura-homme-ziane",
+      "name": "Gandoura Ziane",
+      "category": "Gandoura Homme",
+      "categoryId": "gandoura-homme",
+      "active": true,
+      "image": "/images/gandoura-homme-ziane/1.webp",
+      "price": {
+        "min": 640,
+        "max": 640
+      },
+      "hasVariants": true,
+      "variantCount": 20,
+      "featured": false
+    },
+    {
+      "id": "gandoura-homme-yacine",
+      "slug": "gandoura-homme-yacine",
+      "name": "Gandoura Yacine",
+      "category": "Gandoura Homme",
+      "categoryId": "gandoura-homme",
+      "active": true,
+      "image": "/images/gandoura-homme-yacine/1.webp",
+      "price": {
+        "min": 500,
+        "max": 500
+      },
+      "hasVariants": true,
+      "variantCount": 15,
+      "featured": false
+    },
+    {
+      "id": "jellaba-enfant-lina",
+      "slug": "jellaba-enfant-lina",
+      "name": "Jellaba Lina",
+      "category": "Jellaba Enfant",
+      "categoryId": "jellaba-enfant",
+      "active": true,
+      "image": "/images/jellaba-enfant-lina/1.webp",
+      "price": {
+        "min": 380,
+        "max": 380
+      },
+      "hasVariants": true,
+      "variantCount": 24,
+      "featured": false
+    },
+    {
+      "id": "jellaba-enfant-adam",
+      "slug": "jellaba-enfant-adam",
+      "name": "Jellaba Adam",
+      "category": "Jellaba Enfant",
+      "categoryId": "jellaba-enfant",
+      "active": true,
+      "image": "/images/jellaba-enfant-adam/1.webp",
+      "price": {
+        "min": 420,
+        "max": 420
+      },
+      "hasVariants": true,
+      "variantCount": 24,
+      "featured": false
+    },
+    {
+      "id": "babouches-fassia",
+      "slug": "babouches-fassia",
+      "name": "Babouches Fassia",
+      "category": "Accessoires",
+      "categoryId": "accessoires",
+      "active": true,
+      "image": "/images/babouches-fassia/1.webp",
+      "price": {
+        "min": 290,
+        "max": 290
+      },
+      "hasVariants": true,
+      "variantCount": 32,
+      "featured": false
+    },
+    {
+      "id": "selham-atlas",
+      "slug": "selham-atlas",
+      "name": "Selham Atlas",
+      "category": "Accessoires",
+      "categoryId": "accessoires",
+      "active": true,
+      "image": "/images/selham-atlas/1.webp",
+      "price": {
+        "min": 1450,
+        "max": 1450
+      },
+      "hasVariants": true,
+      "variantCount": 8,
+      "featured": false
+    },
+    {
+      "id": "tarbouch-fes",
+      "slug": "tarbouch-fes",
+      "name": "Tarbouch Fès",
+      "category": "Accessoires",
+      "categoryId": "accessoires",
+      "active": true,
+      "image": "/images/tarbouch-fes/1.webp",
+      "price": {
+        "min": 160,
+        "max": 160
+      },
+      "hasVariants": true,
+      "variantCount": 3,
+      "featured": false
     }
   ]
 }

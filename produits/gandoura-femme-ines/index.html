@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gandoura Inès | Le Jellaba</title>
+<meta name="description" content="Achetez Gandoura Inès. Artisanat marocain de qualité. Prix : 590 MAD. Livraison au Maroc.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lejellaba.ma/produits/gandoura-femme-ines/">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Gandoura Inès">
+<meta property="og:url" content="https://lejellaba.ma/produits/gandoura-femme-ines/">
+<meta property="og:image" content="https://lejellaba.ma/images/gandoura-femme-ines/1.webp">
+<meta property="og:locale" content="fr_MA">
+<meta property="product:price:amount" content="590">
+<meta property="product:price:currency" content="MAD">
+<meta property="product:availability" content="in stock">
+<link rel="icon" type="image/png" href="/lejellaba/assets/favicon.png">
+<link rel="stylesheet" href="/lejellaba/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Gandoura Inès",
+  "description": "Gandoura Inès - vêtement traditionnel marocain de haute qualité",
+  "image": ["https://lejellaba.ma/images/gandoura-femme-ines/1.webp"],
+  "brand": {"@type": "Brand", "name": "Le Jellaba"},
+  "sku": "gandoura-femme-ines",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "MAD",
+    "price": "590",
+    "url": "https://lejellaba.ma/produits/gandoura-femme-ines/",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "Le Jellaba"}
+  }
+}
+</script>
+</head>
+<body>
+<script src="/lejellaba/assets/header.js" defer></script>
+<div class="announce">Livraison gratuite partout au Maroc · Artisanat authentique</div>
+
+<nav class="breadcrumb" style="max-width:1100px;margin:12px auto;padding:0 20px;font-size:12px;color:#9ca3af">
+  <a href="/lejellaba/" style="color:#6b7280;text-decoration:none">Accueil</a> ›
+  <a href="/lejellaba/categorie/gandoura-femme/" style="color:#6b7280;text-decoration:none">Gandoura Femme</a> ›
+  <span style="color:#1a1a1a">Gandoura Inès</span>
+</nav>
+
+<div class="p-hero">
+  <div class="p-gallery">
+    <img src="/lejellaba/images/gandoura-femme-ines/1.webp" alt="Gandoura Inès" loading="eager" width="600" height="600">
+  </div>
+  <div class="p-info">
+    <div class="p-badge">✅ En stock · Expédition 3–5 jours</div>
+    <h1 class="p-title">Gandoura Inès</h1>
+    <p class="p-subtitle">Mousseline brodée · Fabrication Maroc</p>
+    <div class="p-price">590 MAD</div>
+
+    <div class="p-options" style="margin-top: 20px;">
+        <label>Taille :</label>
+        <select id="size-select" style="padding: 8px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <label>Couleur :</label>
+        <select id="color-select" style="padding: 8px; width: 100%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="Rose">Rose</option>
+            <option value="Turquoise">Turquoise</option>
+            <option value="Blanc">Blanc</option>
+            <option value="Lilas">Lilas</option>
+        </select>
+    </div>
+
+    <button class="btn-wa" onclick="addToCart('gandoura-femme-ines', 'Gandoura Inès', 590, '/lejellaba/images/gandoura-femme-ines/1.webp')" style="width:100%; border:none; cursor:pointer;">
+      🛒 Ajouter au panier
+    </button>
+  </div>
+</div>
+
+<script src="/lejellaba/assets/footer.js" defer></script>
+<script>
+function addToCart(id, name, price, image) {
+    const size = document.getElementById('size-select').value;
+    const color = document.getElementById('color-select').value;
+    let cart = JSON.parse(localStorage.getItem('nova_style_cart')) || [];
+    let options = { Taille: size, Couleur: color };
+    let key = id + "_" + JSON.stringify(options);
+    let existing = cart.find(i => i.key === key);
+    if (existing) { existing.quantity += 1; }
+    else { cart.push({ key: key, id: id, name: name, price: price, image: image, options: options, quantity: 1, timestamp: Date.now() }); }
+    localStorage.setItem('nova_style_cart', JSON.stringify(cart));
+    window.location.href = "/lejellaba/cart.html";
+}
+</script>
+</body>
+</html>

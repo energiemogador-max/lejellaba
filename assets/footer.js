@@ -20,6 +20,7 @@
     { href: "/lejellaba/categorie/gandoura-homme/", label: "Gandoura Homme Traditionnelle" },
     { href: "/lejellaba/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
     { href: "/lejellaba/categorie/accessoires/",     label: "Babouches & Accessoires" },
+    { href: "/lejellaba/blog/",                       label: "Le Journal — Guides & Conseils" },
   ];
 
   var CITIES = [

@@ -11,6 +11,7 @@
     { href: "/lejellaba/categorie/gandoura-homme/", label: "Gandoura Homme" },
     { href: "/lejellaba/categorie/jellaba-enfant/",  label: "Jellaba Enfant" },
     { href: "/lejellaba/categorie/accessoires/",     label: "Accessoires" },
+    { href: "/lejellaba/blog/",                       label: "Le Journal" },
   ];
 
   var navItems = NAV_LINKS.map(function(l) {
